@@ -1,0 +1,68 @@
+.NameEditor{
+    width: 300px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* .NameEditor__textarea:hover{
+    color: aliceblue;
+
+
+} */
+
+.NameEditor__button:hover{
+   background-color: blue;
+   color: aliceblue;
+   border-bottom: none;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    padding: 30px;
+    border: solid 1px;
+    
+    box-shadow: 0px 0px 8px 0px #33333347;
+  }
+  
+  input {
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.1rem;
+    border: solid 1px;
+    border-radius: 2px;
+    /* width: 70%; */
+    display: block;
+    
+  }
+  
+  form > button {
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background-color:rgb(red, green, blue);
+    border-radius: 2px;
+    transition-duration: 250ms;
+  }
+  
+  form > button:hover {
+    /* transform: scale(1.1); */
+    background-color: blue;
+    color: white;
+  }
+  
