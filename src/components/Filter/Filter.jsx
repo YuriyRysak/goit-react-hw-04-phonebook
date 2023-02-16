@@ -8,7 +8,8 @@ export const Filter = ({filter, onChangeFilter}) => (
   Find contacts by name
   <input
     type="text"
-    name={filter}
+    name='filter'
+    value={filter}
     onChange={onChangeFilter}
     placeholder="Find contacts by name"
   />
