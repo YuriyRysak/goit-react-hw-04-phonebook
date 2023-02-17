@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 // import './Filter.module.css';
 
 
-export const Filter = ({filter, onChangeFilter}) => (
+export const Filter = ({filter, changeFilterInput}) => (
 
   <label>
   Find contacts by name
@@ -10,7 +10,7 @@ export const Filter = ({filter, onChangeFilter}) => (
     type="text"
     name='filter'
     value={filter}
-    onChange={onChangeFilter}
+    onChange={changeFilterInput}
     placeholder="Find contacts by name"
   />
 </label>
@@ -19,5 +19,5 @@ export const Filter = ({filter, onChangeFilter}) => (
 
 Filter.propTypes = {
   filter: PropTypes.string.isRequired,
-  onChangeFilter: PropTypes.func.isRequired,
+  changeFilterInput: PropTypes.func.isRequired,
 };

@@ -38,7 +38,15 @@ export const App = () => {
     setFilter(e.target.value);
   };
 
+//  const findContacts = useMemo(() => {
+//     console.log('фильтруем друзей' + Date.now());
+//     return contacts.filter(contact =>
+//       contact.name.toLowerCase().includes(filter.toLowerCase())
+//     );
+//   },[contacts, filter]);
+
   const findContacts = () => {
+    
     return contacts.filter(contact =>
       contact.name.toLowerCase().includes(filter.toLowerCase())
     );
