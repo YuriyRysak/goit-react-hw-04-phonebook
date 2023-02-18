@@ -25,13 +25,13 @@ export const App = () => {
    const isExist = contacts.some(i => 
        (i.name === contact.name.toLowerCase() &&
         i.number === contact.number) || i.number === contact.number);
-        console.log(isExist)
+        // console.log(isExist)
         if (isExist) {
           return alert(`${name} is already in contacts`)
         }
    
-        else {setContacts([contact, ...contacts]);
-    }
+        setContacts([contact, ...contacts]);
+    
   };
 
   const changeFilterInput = e => {
@@ -54,7 +54,7 @@ export const App = () => {
 
   const deleteContact = id => {
     setContacts(contacts.filter(contact => contact.id !== id));
-    setFilter('');
+    
   };
 
   return (
